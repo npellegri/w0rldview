@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+    <!-- Unique keys declaration -->
+	<key id="Node_Type" for="node" attr.name="Node_Type" attr.type="string"/>
+	<key id="Truthvalue" for="node" attr.name="Truthvalue" attr.type="string"/>
+	<key id="Tense" for="node" attr.name="Tense" attr.type="string"/>
+	<key id="Modifier" for="node" attr.name="Modifier" attr.type="string"/>
+	<key id="Edge_Type" for="edge" attr.name="Edge_Type" attr.type="string"/>
+
+
+<graph>
+	<edge source="religious_issues" target="dominate" >
+		<data key="Edge_Type">subject</data>
+	</edge>
+	<node id="religious_issues">
+		<data key="Node_Type">concept</data>
+	<node id="dominate">
+		<data key="Node_Type">relationship</data>
+		<data key="Truthvalue">true</data>
+		<data key="Tense">present</data>
+		<data key="Modifier">factual</data>
+	</node>
+	<edge source="dominate" target="both">
+		<data key="Edge_Type">object</data>
+	</edge>
+	<node id="both"/>
+		<data key="Node_Type">conjunction</data>
+	</node>
+	<edge source="both" target="discussions_of_international_affairs">
+		<data key="Edge_Type">conjunct</data>
+	</edge>
+	<edge source="both" target="news_cycles">
+		<data key="Edge_Type">conjunct</data>
+	</edge>
+	<node id="discussions_of_international_affairs">
+		<data key="Node_Type">concept</data>
+	</node>
+	<node id="news_cycles">
+		<data key="Node_Type">concept</data>
+	</node>
+    <edge source="dominate" target="surge"/>
+	<edge source="surge" target="religious_scholarship"/>
+	<node id="surge">
+		<data key="Node_Type">relationship</data>
+		<data key="Truthvalue">true</data>
+		<data key="Tense">present</data>
+		<data key="Modifier">factual</data>
+	</node>
+	<node id="religious_scholarship">
+		<data key="Node_Type">concept</data>
+	</node>
+	<edge source="religious_scholarship" target="assess">
+		<data key="Edge_Type">subject</data>
+	</edge>
+	<node id="religious_scholarship">
+		<data key="Node_Type">concept</data>
+	</node>
+	<node id="assess">
+		<data key="Node_Type">relationship</data>
+		<data key="Truthvalue">true</data>
+		<data key="Tense">present</data>
+		<data key="Modifier">factual</data>
+	</node>
+	<edge source="assess" target="relevance">
+		<data key="Edge_Type">object</data>
+	</edge>
+	<node id="relevance">
+		<data key="Node_Type">relationship</data>
+		<data key="Truthvalue">true</data>
+		<data key="Tense">present</data>
+		<data key="Modifier">hypothetical</data>
+	</node>
+	<edge source="cross_national" target="relevance">
+		<data key="Edge_Type">subject</data>
+	</edge>
+	<node id="cross_national">
+		<data key="Node_Type">concept</data>
+	</node>
+	<edge source="relevance" target="religious_commitment">
+		<data key="Edge_Type">object</data>
+	</edge>
+	<node id="religious_commitment">
+		<data key="Node_Type">concept</data>
+	</node>
+	<edge source="assess" target="hypothesis"/>
+	<edge source="hypothesis" target="related_to"/>
+	<node id="hypothesis">
+		<data key="Node_Type">relationship</data>
+		<data key="Truthvalue">true</data>
+		<data key="Tense">present</data>
+		<data key="Modifier">hypothetical</data>
+	</node>
+	<node id="related_to" label="related_to">
+		<data key="Node_Type">relationship</data>
+		<data key="Truthvalue">true</data>
+		<data key="Tense">present</data>
+		<data key="Modifier">hypothetical</data>
+	</node>
+	<edge source="state" target="initiate">
+		<data key="Edge_Type">subject</data>
+	</edge>
+	<node id="initiate">
+		<data key="Node_Type">relationship</data>
+		<data key="Truthvalue">true</data>
+		<data key="Tense">present</data>
+		<data key="Modifier">hypothetical</data>
+	</node>
+	<edge source="religious_commitment" target="initiate" >
+		<data key="Edge_Type">subject</data>
+	</edge>
+	<edge source="initiate" target="inter_state_conflict">
+		<data key="Edge_Type">object</data>
+	</edge>
+</graph>
+</graphml>
