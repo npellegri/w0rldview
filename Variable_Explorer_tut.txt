@@ -1,0 +1,9 @@
+Use the command palette (Cmd+Shift+P / Ctrl+Shift+P) and run:
+
+"Show Variable Explorer" - Opens the Variable Explorer panel
+Running Python Code
+The Variable Explorer works with Python code executed through:
+
+Run File: Execute an entire Python file (F5)
+Run Code: Execute selected Python code (F9 or Shift+Enter)
+The extension maintains a persistent Python namespace across executions
