@@ -1,0 +1,4 @@
+Next Steps:
+    Plotly & Dash
+        Interactive Graphing; hide and show nodes and things like that.
+        Mainly called "Callback"
