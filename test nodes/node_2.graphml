@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+
+    <key id="Node_Type" for="node" attr.name="Node_Type" attr.type="string"/>
+    <key id="Truthvalue" for="node" attr.name="Truthvalue" attr.type="string"/>
+    <key id="Tense" for="node" attr.name="Tense" attr.type="string"/>
+    <key id="Modifier" for="node" attr.name="Modifier" attr.type="string"/>
+    <key id="Edge_Type" for="edge" attr.name="Edge_Type" attr.type="string"/>
+
+    <graph id="G" edgedefault="directed">
+        <node id="assess">
+            <data key="Node_Type">relationship</data>
+            <data key="Truthvalue">true</data>
+            <data key="Tense">present</data>
+            <data key="Modifier">factual</data>
+        </node>
+        <node id="relevance">
+            <data key="Node_Type">relationship</data>
+            <data key="Truthvalue">true</data>
+            <data key="Tense">present</data>
+            <data key="Modifier">hypothetical</data>
+        </node>
+        <node id="cross_national">
+            <data key="Node_Type">concept</data>
+        </node>
+        <edge source="assess" target="relevance">
+            <data key="Edge_Type">related_to</data>
+        </edge>
+        <edge source="cross_national" target="relevance">
+            <data key="Edge_Type">related_to</data>
+        </edge>
+    </graph>
+</graphml>
