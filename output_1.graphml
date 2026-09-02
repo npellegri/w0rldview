@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="Edge_Type" attr.type="string" />
+  <key id="d5" for="node" attr.name="Sentence" attr.type="string" />
+  <key id="d4" for="node" attr.name="Tense" attr.type="string" />
+  <key id="d3" for="node" attr.name="Modifier" attr.type="string" />
+  <key id="d2" for="node" attr.name="Truthvalue" attr.type="string" />
+  <key id="d1" for="node" attr.name="Label" attr.type="string" />
+  <key id="d0" for="node" attr.name="Node_Type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="We">
+      <data key="d0">concept</data>
+      <data key="d1">We</data>
+    </node>
+    <node id="relationship_1">
+      <data key="d0">relationship</data>
+      <data key="d1">view</data>
+      <data key="d2">true</data>
+      <data key="d3">factual</data>
+      <data key="d4">present</data>
+      <data key="d5">( We view true factual present process_as_a_dialogue_with_all_the_country )</data>
+    </node>
+    <node id="true factual present process_as_a_dialogue_with_all_the_country">
+      <data key="d0">concept</data>
+      <data key="d1">true factual present process_as_a_dialogue_with_all_the_country</data>
+    </node>
+    <edge source="We" target="relationship_1">
+      <data key="d6">subject</data>
+    </edge>
+    <edge source="relationship_1" target="true factual present process_as_a_dialogue_with_all_the_country">
+      <data key="d6">object</data>
+    </edge>
+  </graph>
+</graphml>
